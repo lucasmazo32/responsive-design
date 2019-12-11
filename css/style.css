@@ -46,6 +46,10 @@
     font-style: normal;
 }
 
+body {
+    font-family: 'ARS-Marquette', "Helvetica Neue", sans-serif;
+}
+
 nav {
   /* display: flex;
   justify-content: center;
@@ -199,55 +203,155 @@ nav {
   transform: translateY(6px);  
 }
 
+/* Main Artcicle */
+
+.articles-cover {
+    display: flex;
+    height: 60vh;
+    padding: 4px;
+}
+
+.side-articles {
+    display: flex;
+    flex-flow: column;
+    width: 33.333333%;
+    height: 100%;
+}
+
+.main-article {
+    position: relative;
+    width: 66.666666%;
+    height: 100%;
+    padding: 4px;
+    overflow: hidden;
+}
+
+.main-article a {
+    display: block;
+    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(../images/main_cover);
+    background-size: 100% 100%, cover;
+    background-position: center, center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-main-article {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    left: 24px;
+    color: white;
+    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
+    z-index: 2;
+    max-height: 112px;
+    height: 96px;
+    max-width: 50%;
+}
+
+.cover-gradient {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png) no-repeat;
+    background-size: cover;
+    mix-blend-mode: lighten;
+    z-index: 1;
+}
+
+.cover-time {
+    position: absolute;
+    color: #fff;
+    right: 24px;
+    top: 16px;
+    line-height: 21px;
+    z-index: 2;
+}
+
+.side-article {
+    width: 100%;
+    height: 50%;
+    padding: 4px;
+}
+
+.side-article1 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/bitcoin-netherlands-bill-payment-fraud-cryptocurrency-hard-fork-blockhain-scam-crypto-796x448.jpg);
+    background-size: 100% 100%, cover;
+    background-position: center;
+}
+
+.side-article2 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/header-image-star-wars-headphones-bose-796x417.png);
+    background-size: 100% 100%, cover;
+    background-position: center;
+}
+
+
 @media screen and (max-width: 1024px) {
-  .nav-1 {
-    margin-left: 106px;
-  }
-
-  .navigation {
+    .nav-1 {
       margin-left: 106px;
-  }
+    }
+  
+    .navigation {
+        margin-left: 106px;
+    }
+  
+    .nav-logo {
+      display: block;
+    }
+  
+    .nav-logo img {
+      -webkit-transform: translateY(16px);
+      transform: translateY(16px);
+    }
+  
+    .navigation a {
+      /* padding: 18px 10px 0; */
+    }
 
-  .nav-logo {
-    display: block;
-  }
+    .articles-cover {
+        max-height: 560px;
+    }
 
-  .nav-logo img {
-    -webkit-transform: translateY(16px);
-    transform: translateY(16px);
+    .cover-show {
+        display: none;
+    }
   }
-
-  .navigation a {
-    /* padding: 18px 10px 0; */
-  }
-}
-
-@media screen and (max-width: 880px) {
-  .nav-1 .disappear {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  nav {
-    height: 48px;
-  }
-
-  .nav-1 {
+  
+  @media screen and (max-width: 880px) {
+    .nav-1 .disappear {
       display: none;
+    }
   }
-
-  .nav-logo {
-    display: block;
-    height: 48px;
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      height: 48px;
+    }
+  
+    .nav-1 {
+        display: none;
+    }
+  
+    .nav-logo {
+      display: block;
+      height: 48px;
+    }
+  
+    .nav-logo img {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    .navigation li:nth-child(-n + 5) {
+      display: none;
+    }
   }
-
-  .nav-logo img {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  .navigation li:nth-child(-n + 5) {
-    display: none;
-  }
-}
+  
