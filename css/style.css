@@ -226,9 +226,9 @@ nav {
     overflow: hidden;
 }
 
-.main-article a {
+.main-article .background {
     display: block;
-    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(../images/main_cover);
+    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/WhatsApp-hed-796x419.jpg);
     background-size: 100% 100%, cover;
     background-position: center, center;
     width: 100%;
@@ -269,26 +269,88 @@ nav {
     z-index: 2;
 }
 
+.main-article-text {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  z-index: 2;
+  padding: 24px 20px;
+}
+
+.article-text-color {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-article-text h2 {
+  font-family: 'avalon-bold', sans-serif;
+  font-size: 56px;
+  margin-bottom: .25em;
+}
+
+.main-article-text h5 {
+  text-transform: uppercase;
+  font-family: 'Shentox', sans-serif;
+  font-size: 14px;
+}
+
+.list-text-color {
+  text-decoration: none;
+  color: hsla(0,0%,100%,.6);
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.icons {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+  margin-right: 4px;
+  margin-left: 6px;
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783);
+  background-size: 1296px 1296px;
+}
+
+.clock-icon {
+  background-position: -160px -160px;
+}
+
+.share-icon {
+  background-position: -912px -912px;
+}
+
+.list-layout {
+  display: flex;
+  align-items: center;
+}
+
+.list-layout li {
+  display: flex;
+  align-items: center;
+}
+
 .side-article {
     width: 100%;
     height: 50%;
     padding: 4px;
 }
 
-.side-article1 a{
+.side-article1 .background{
     display: block;
     width: 100%;
     height: 100%;
-    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/bitcoin-netherlands-bill-payment-fraud-cryptocurrency-hard-fork-blockhain-scam-crypto-796x448.jpg);
+    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/YouTube-Dark-796x417.jpg);
     background-size: 100% 100%, cover;
     background-position: center;
 }
 
-.side-article2 a{
+.side-article2 .background{
     display: block;
     width: 100%;
     height: 100%;
-    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/header-image-star-wars-headphones-bose-796x417.png);
+    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/bitcoinmining-796x532.jpg);
     background-size: 100% 100%, cover;
     background-position: center;
 }
