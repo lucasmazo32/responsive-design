@@ -56,6 +56,7 @@ nav {
   align-items: center; */
   position: relative;
   height: 80px;
+  box-shadow: 0 0 32px rgba(0,0,0,.15);
 }
 
 .nav-logo {
@@ -177,7 +178,7 @@ nav {
 }
 
 .hamburger-icon a {
-  display: block;
+  display: none;
   position: relative;
   height: 48px;
   padding: 16px;
@@ -378,6 +379,122 @@ nav {
     background-position: center;
 }
 
+.latest-news {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 24px 20px 0 20px;
+}
+
+.latest-news h2 {
+  margin-bottom: 24px;
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.latest-news h2 a {
+  font-family: 'Avalon',sans-serif;
+  text-decoration: none;
+  letter-spacing: -.015em;
+  color: #f42;
+}
+
+.latest-news h2 a svg {
+  background-size: 16px 16px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+}
+
+.latest-news-list {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+  margin: -8px;
+}
+
+.latest-news-list .article-image {
+  display: block;
+  height: 135px;
+  margin-bottom: 8px;
+  background-size: cover;
+}
+
+.latest-news-list li:nth-of-type(1) .article-image {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/header-image-honor-9x-budget-phones-516x270.png);
+}
+
+.latest-news-list li:nth-of-type(2) .article-image {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Cavier-Jesus-Phone-516x270.jpg);
+}
+
+.latest-news-list li:nth-of-type(3) .article-image {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/YouTube-Dark-516x270.jpg);
+}
+
+.latest-news-list li:nth-of-type(4) .article-image {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/bitcoinmining-404x270.jpg);
+}
+
+.latest-news-list li:nth-of-type(5) .article-image {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/movie-pirate-cryptocurrency-bitcoin-paypal-ethereum-stripe-litecoin-478x270.jpg);
+}
+
+.latest-news-list li:nth-of-type(6) .article-image {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/bitcoin-netherlands-bill-payment-fraud-cryptocurrency-hard-fork-blockhain-scam-crypto-480x270.jpg);
+}
+
+.latest-news-list li:nth-of-type(7) .article-image {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/ssLpnno-540x270.jpg);
+}
+
+.latest-news-list li:nth-of-type(8) .article-image {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/header-image-star-wars-headphones-bose-516x270.png);
+}
+
+.latest-news-list .article-title {
+  font-family: 'ARS-Marquette-Bold', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 1px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-decoration: none;
+  color: #000;
+}
+
+.latest-news-list .article-title:hover {
+  box-shadow: inset 0 -1px 0 rgba(255,68,34,.25);
+    color: #f42;
+}
+
+.latest-news-list div {
+  padding-top: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #aaa;
+}
+
+.latest-news-list .article-author {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.latest-news-list .article-author:after {
+  content: "\B7";
+  margin-left: 4px;
+}
+
+.latest-news-list .article-author:hover:after {
+  color: #aaa;
+}
+
+.latest-news-list .article-author:hover {
+  color: #555;
+}
+
 @media screen and (max-width: 1600px) {
 
   .articles-cover {
@@ -388,7 +505,6 @@ nav {
   .main-article-text, .side-article-text {
     padding: 20px 16px;
   }
-
 }
 
 @media screen and (max-width: 1280px) {
@@ -415,10 +531,6 @@ nav {
     .nav-logo img {
       -webkit-transform: translateY(16px);
       transform: translateY(16px);
-    }
-  
-    .navigation a {
-      /* padding: 18px 10px 0; */
     }
 
     .articles-cover {
@@ -480,6 +592,10 @@ nav {
       display: none;
     }
 
+    .hamburger-icon a {
+      display: block;
+    }
+
     .articles-cover {
       flex-flow: column;
     }
@@ -502,5 +618,71 @@ nav {
       font-size: 20px;
     }
 
+    .latest-news-list {
+      flex-basis: 100%;
+      max-width: 100%;
+      flex: 0 0 auto;
+      padding: 8px;
+      position: relative;
+    }
+
+    .latest-news-list .article-image {
+      left: 0;
+      height: 75px;
+      /* position: absolute; */
+      top: 0;
+      width: 75px;
+      background-position: center;
+    }
   }
-  
+
+  @media screen and (min-width: 768px) {
+    .navigation li:first-of-type a {
+      padding-left: 20px;
+    }
+
+    .latest-news {
+      margin-bottom: 3em;
+    }
+
+    .latest-news h2 {
+      font-size: 28px;
+    }
+
+    .latest-news-list {
+      margin: -10px;
+    }
+
+    .latest-news-list li {
+      flex-basis: 33.33333%;
+        max-width: 33.33333%;
+        padding: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .latest-news {
+      margin-bottom: 4em;
+    }
+
+    .latest-news-list {
+      margin: -12px;
+    }
+
+    .latest-news-list li {
+      flex-basis: 25%;
+        max-width: 25%;
+        padding: 12px;
+    }
+
+    .latest-news-list .article-title {
+      font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    .latest-news-list div {
+      font-size: 13px;
+        line-height: 20px;
+    }
+  }
