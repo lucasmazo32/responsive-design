@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'ars-maquette-probold';
+    font-family: 'ARS-Marquette-Bold';
     src: url('fonts/ars-maquette-bold-alt-webfont.eot');
     src: url('fonts/ars-maquette-bold-alt-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/ars-maquette-bold-alt-webfont.woff2') format('woff2'),
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: 'ars-maquette-web-oneregular';
+    font-family: 'ARS-Marquette';
     src: url('fonts/ars-maquette-regular-webfont.eot');
     src: url('fonts/ars-maquette-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/ars-maquette-regular-webfont.woff2') format('woff2'),
@@ -30,6 +30,18 @@
          url('fonts/avalon-bold-webfont.woff') format('woff'),
          url('fonts/avalon-bold-webfont.ttf') format('truetype'),
          url('fonts/avalon-bold-webfont.svg#_.uploaded_file') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shentox';
+    src: url('fonts/shentox-medium.eot');
+    src: url('fonts/shentox-medium.eot?#iefix') format('embedded-opentype'),
+         url('fonts/shentox-medium.woff2') format('woff2'),
+         url('fonts/Shentox-medium.woff') format('woff'),
+         url('fonts/Shentox-medium.ttf') format('truetype'),
+         url('fonts/Shentox-medium.svg#_.uploaded_file') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -95,7 +107,7 @@ nav {
 }
 
 .nav-1 li a {
-  font-family: 'ars-maquette-web-oneregular', "Helvetica Neue", Arial, sans-serif;
+  font-family: 'ARS-Marquette', "Helvetica Neue", Arial, sans-serif;
   text-decoration: none;
   color: hsla(0, 0%, 100%, 0.6);
 }
