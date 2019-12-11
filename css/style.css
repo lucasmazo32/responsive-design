@@ -1,3 +1,39 @@
+@font-face {
+    font-family: 'ars-maquette-probold';
+    src: url('fonts/ars-maquette-bold-alt-webfont.eot');
+    src: url('fonts/ars-maquette-bold-alt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ars-maquette-bold-alt-webfont.woff2') format('woff2'),
+         url('fonts/ars-maquette-bold-alt-webfont.woff') format('woff'),
+         url('fonts/ars-maquette-bold-alt-webfont.ttf') format('truetype'),
+         url('fonts/ars-maquette-bold-alt-webfont.svg#ars_maquette_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ars-maquette-web-oneregular';
+    src: url('fonts/ars-maquette-regular-webfont.eot');
+    src: url('fonts/ars-maquette-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ars-maquette-regular-webfont.woff2') format('woff2'),
+         url('fonts/ars-maquette-regular-webfont.woff') format('woff'),
+         url('fonts/ars-maquette-regular-webfont.ttf') format('truetype'),
+         url('fonts/ars-maquette-regular-webfont.svg#ars_maquette_web_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avalon-bold';
+    src: url('fonts/avalon-bold-webfont.eot');
+    src: url('fonts/avalon-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/avalon-bold-webfont.woff2') format('woff2'),
+         url('fonts/avalon-bold-webfont.woff') format('woff'),
+         url('fonts/avalon-bold-webfont.ttf') format('truetype'),
+         url('fonts/avalon-bold-webfont.svg#_.uploaded_file') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 nav {
   /* display: flex;
   justify-content: center;
@@ -59,7 +95,7 @@ nav {
 }
 
 .nav-1 li a {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'ars-maquette-web-oneregular', "Helvetica Neue", Arial, sans-serif;
   text-decoration: none;
   color: hsla(0, 0%, 100%, 0.6);
 }
