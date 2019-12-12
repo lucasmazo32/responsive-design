@@ -381,6 +381,7 @@ nav {
 
 .latest-news {
   margin: 0 auto;
+  margin-bottom: 2em;
   max-width: 1192px;
   padding: 24px 20px 0 20px;
 }
