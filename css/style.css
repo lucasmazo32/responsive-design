@@ -771,7 +771,6 @@ nav {
     display: inline-block;
     height: 9px;
     margin-right: 1px;
-    /* vertical-align: baseline; */
 }
 
 .footer-legal b {
@@ -779,7 +778,7 @@ nav {
   color: #f42;
 }
 
-/* new */
+/* sections articles */
 
 .sections-wrapper {
   display: flex;
@@ -788,40 +787,75 @@ nav {
   margin: 0 auto 40px auto;
 }
 
-.apps {
+.sections-articles {
   flex-basis: 100%;
-  flex: 0 0 auto;
   max-width: 100%;
   padding: 8px;
   margin: 0;
 }
 
-.apps h2 {
+.sections-articles h2 {
   margin-bottom: 18px;
 }
 
-.apps ul {
+.sections-articles ul {
   display: flex;
   flex-direction: column;
-  max-width: 368px;
+  max-width: 100%;
   width: 100%;
 }
 
-.apps ul li:first-child a:first-of-type {
+.sections-articles ul li:first-child a:first-of-type {
   text-decoration: none;
 }
 
-.apps .primary-article {
-  max-height: 276px;
+.sections-articles .primary-article {
   width: 100%;
-  height: 276px;
+  height: calc(calc(0.75 * 100vw) - 16px);
   position: relative;
+}
+
+.sections-articles:nth-of-type(1) .primary-article {
   background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Chrome-79-368x276.png);
-  background-repeat: no-repeat, no-repeat;
   background-size: 100% 100%, cover;
 }
 
-.apps .primary-article .description {
+.sections-articles:nth-of-type(2) .primary-article {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Snag_47c20d08-368x276.png);
+  background-size: 100% 100%, cover;
+}
+
+.sections-articles:nth-of-type(3) .primary-article {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/trumpthiel-368x276.jpg);
+  background-size: 100% 100%, cover;
+}
+
+.sections-articles:nth-of-type(4) .primary-article {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Giphy-Arcade-368x276.jpg);
+  background-size: 100% 100%, cover;
+}
+
+.sections-articles:nth-of-type(5) .primary-article {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/video-gaming-368x276.jpg);
+  background-size: 100% 100%, cover;
+}
+
+.sections-articles:nth-of-type(6) .primary-article {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/ring-camera-bitcoin-ransom-burglar-cryptocurrency-hard-fork-demand-hacker-scam-368x276.png);
+  background-size: 100% 100%, cover;
+}
+
+.sections-articles:nth-of-type(7) .primary-article {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg);
+  background-size: 100% 100%, cover;
+}
+
+.sections-articles:nth-of-type(8) .primary-article {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Cavier-Jesus-Phone-368x276.jpg);
+  background-size: 100% 100%, cover;
+}
+
+.sections-articles .primary-article .description {
   bottom: 0;
     left: 0;
     padding: 14px;
@@ -830,7 +864,7 @@ nav {
     z-index: 3;
 }
 
-.apps .primary-article .description div {
+.sections-articles .primary-article .description div {
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -839,23 +873,23 @@ nav {
   color: hsla(0, 0%, 100%, .6);
 }
 
-.apps .primary-article .article-author {
+.sections-articles .primary-article .article-author {
   color: inherit;
   text-decoration: none;
 }
 
-.apps .primary-article .article-author:after {
+.sections-articles .primary-article .article-author:after {
   content: "\B7";
     display: block;
     float: right;
     margin: 0 4px;
 }
 
-.apps .primary-article .article-author:hover {
+.sections-articles .primary-article .article-author:hover {
   color: #fff;
 }
 
-.apps .primary-article h5 {
+.sections-articles .primary-article h5 {
   color: #fff;
     font-size: 13px;
     font-family: 'Shentox', sans-serif;
@@ -867,36 +901,36 @@ nav {
   pointer-events: none;
 }
 
-.apps .primary-article h3 {
+.sections-articles .primary-article h3 {
   margin-bottom: 6px;
 }
 
-.apps .primary-article h3 a {
+.sections-articles .primary-article h3 a {
   font-size: 20px;
   font-weight: 700;
     line-height: 1.1;
     color: #fff;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-.apps .primary-article h3 a:hover {
+.sections-articles .primary-article h3 a:hover {
   box-shadow: inset 0 -1px 0 hsla(0,0%,100%,.3);
 }
 
-.apps .latest-article {
+.sections-articles .latest-article {
   display: flex;
     background-color: rgba(255, 68, 34, .06);
     margin: 2px 0;
 }
 
-.apps .latest-article div {
+.sections-articles .latest-article div {
   flex: 1;
     overflow: hidden;
     padding: 10px 14px 0;
     background-color: transparent;
 }
 
-.apps .latest-article h4 {
+.sections-articles .latest-article h4 {
   color: #f42;
     font-size: 13px;
     font-family: 'Shentox',sans-serif;
@@ -906,10 +940,10 @@ nav {
     line-height: 1.5;
 }
 
-.apps .latest-article h5 a {
+.sections-articles .latest-article h5 a {
   width: 100%;
   max-height: 56px;
-  font-family: 'ARS-Marquette-Bold', "Helvetica Neue", Arial, sans-serif;  
+  font-family: 'ARS-Marquette-Bold', "Helvetica Neue", Arial, sans-serif;
   overflow: hidden;
     text-overflow: ellipsis;
     font-size: 14px;
@@ -919,24 +953,55 @@ nav {
     text-decoration: none;
 }
 
-.apps .latest-article h5 a:hover {
+.sections-articles .latest-article h5 a:hover {
   box-shadow: inset 0 -1px 0 rgba(255,68,34,.2);
 }
 
-.apps .latest-article .image-link{
+.sections-articles .latest-article .image-link{
   display: inline-block;
   width: 96px;
   height: 96px;
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/China-app.jpg);
   background-position: 50%;
-    background-size: cover;
+  background-size: cover;
 }
 
-.apps .bullet-links {
+.sections-articles:nth-of-type(1) .latest-article .image-link {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/China-app.jpg);
+}
+
+.sections-articles:nth-of-type(2) .latest-article .image-link {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/iPhone-11.00_05_06_23.Still019.png);
+}
+
+.sections-articles:nth-of-type(3) .latest-article .image-link {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/1-11.jpg);
+}
+
+.sections-articles:nth-of-type(4) .latest-article .image-link {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Annotation-2019-09-19-121214.png);
+}
+
+.sections-articles:nth-of-type(5) .latest-article .image-link {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Untitled-design18-1.png);
+}
+
+.sections-articles:nth-of-type(6) .latest-article .image-link {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/pornhub-porn-iphone-android.jpg);
+}
+
+.sections-articles:nth-of-type(7) .latest-article .image-link {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Press-Conference-with-Eric-Esrailian-Alexis-Ohanian-Hakob-Arshakyan-Yervant-Zorian-and-Serj-Tankian-hed.jpg);
+}
+
+.sections-articles:nth-of-type(8) .latest-article .image-link {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/YouTube-Dark.jpg);
+}
+
+.sections-articles .bullet-links {
   border-bottom: 1px solid #eee;
 }
 
-.apps .bullet-links a {
+.sections-articles .bullet-links a {
   display: block;
     padding: 6px 0 6px 14px;
     position: relative;
@@ -947,7 +1012,7 @@ nav {
     text-decoration: none;
 }
 
-.apps .bullet-links a:before {
+.sections-articles .bullet-links a:before {
   border-radius: 50%;
     content: "";
     display: block;
@@ -959,11 +1024,163 @@ nav {
     background-color: #f42;
 }
 
-.apps .bullet-links a:hover {
+.sections-articles .bullet-links a:hover {
   color: #000;
 }
 
-/* new */
+/* latest deals */
+
+.latest-deals {
+  max-width: 1152px;
+  width: 100%;
+  padding: 0 8px;
+  margin: 0 auto;
+}
+
+.latest-deals ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* margin: -8px; */
+}
+
+.latest-deals li {
+    flex-basis: 100%;
+    position: relative;
+    /* max-width: 276px; */
+    height: 91px;
+    padding: 8px;
+}
+
+.latest-deals-list .article-image {
+  display: block;
+  /* max-width: 276px;
+  max-height: 198px;
+  width: 100%; */
+  /* height: 198px; */
+  margin-bottom: 8px;
+  background-position: center;
+  left: 0;
+  width: 75px;
+  height: 75px;  
+  position: absolute;
+  top: 0;
+}
+
+.latest-deals li:nth-of-type(1) .article-image {
+  background-image: url(https://cdnp1.stackassets.com/a1885052002064f3903e6c4d22b09695ee1224e5/store/6ad863301975cc44ff2d8ca2233009444670eee3b2e453cc521275dd1a09/sale_24048_primary_image.jpg);
+  background-size: cover;
+  background-position: 0 100%;
+}
+
+.latest-deals li:nth-of-type(2) .article-image {
+  background-image: url(https://cdnp0.stackassets.com/17171c9342ee8910c3d0a2b7d847d5147d92f4ff/store/f2f82645f4f46d4be5f09ead0b28234e9e1bbe70aa1cb7b56fb004fa9a3a/sale_7147_primary_image.jpg);
+  background-size: cover;
+  background-position: 0 100%;
+}
+
+.latest-deals li:nth-of-type(3) .article-image {
+  background-image: url(https://cdnp0.stackassets.com/6d70d23d7f4e176c14ed33f15da993c8988dcd4b/store/63ac50970ccd31374bbc4cf9f7fbbbf9444d63c6b8bb4f4e458076224adf/sale_20151_primary_image.jpg);
+  background-size: cover;
+  background-position: 0 100%;
+}
+
+.latest-deals li:nth-of-type(4) .article-image {
+  background-image: url(https://cdnp0.stackassets.com/0bcaf472e484efc5812ba81caff99e8d92b3e6e9/store/a608033f5bd5c0926a52360990ea5bd8a7241593db592e096d16df200727/product_30218_product_shots4.jpg);
+  background-size: cover;
+  background-position: 0 100%;
+}
+
+.latest-deals li:nth-of-type(5) .article-image {
+  background-image: url(https://cdnp2.stackassets.com/6c92b9e0653335dbb5262c7fb7f7a37803580253/store/48e4af10ff7e59d73ce8784413003f33292e1da457bb6b1779ec13867826/sale_24049_primary_image.jpg);
+  background-size: cover;
+  background-position: 0 100%;
+}
+
+.latest-deals li:nth-of-type(6) .article-image {
+  background-image: url(https://cdnp0.stackassets.com/c11e9b63abc32b2f0d57b195ebf30199249701cb/store/2dc1dd425b6bbead7647a3be7ce6068480c90a8025f80de38865cc0126e4/sale_24047_primary_image.jpg);
+  background-size: cover;
+  background-position: 0 100%;
+}
+
+.latest-deals li:nth-of-type(7) .article-image {
+  background-image: url(https://cdnp1.stackassets.com/9f281e234d0d2b77622d7d05d0a5b030cfb6455e/store/0c81ad11d5c8a66678f378021c66bb7a6be5e5c0a491a81ea34ab77c9368/sale_23970_primary_image.jpg);
+  background-size: cover;
+  background-position: 0 100%;
+}
+
+.latest-deals li:nth-of-type(8) .article-image {
+  background-image: url(https://cdnp2.stackassets.com/568e03025d349d35d5dd1c5973c07964472d9936/store/021abfb1000d1f2aa1f7bb73ea83c67750c15566b177eae8d22a5d4887c3/sale_24292_primary_image.jpg);
+  background-size: cover;
+  background-position: 0 100%;
+}
+
+.latest-deals .discount {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #000;
+    /* display: block; */
+    display: none;
+    height: 80px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    z-index: 10;
+}
+
+.latest-deals .discount div {
+    transform: rotate(45deg);
+    font-size: 14px;
+    font-weight: 700;
+    left: 8px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 22px;
+    width: 100%;
+}
+
+.latest-deals h4 {
+  padding-left: 80px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 1px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.latest-deals .price {
+  padding-left: 80px;
+}
+
+.latest-deals .article-title {
+  color: #000;
+  text-decoration: none;
+}
+
+.latest-deals .article-title:hover {
+    box-shadow: inset 0 -1px 0 rgba(255,68,34,.25);
+    color: #f42;
+}
+
+.latest-deals span:first-of-type {
+  margin-right: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.latest-deals span:last-of-type {
+    color: #555;
+    font-size: 14px;
+    line-height: 18px;
+}
 
 @media screen and (max-width: 1600px) {
 
@@ -1190,10 +1407,8 @@ nav {
     .header-links a:after {
       display: none;
     }
-    
+
   }
-
-
 
   @media screen and (min-width: 768px) {
     .navigation li:first-of-type a {
@@ -1230,11 +1445,45 @@ nav {
       padding: 39px 0;
     }
 
-    .apps {
+    .sections-articles {
       flex-basis: 50%;
         max-width: 50%;
         padding: 10px;
         margin-bottom: 24px;
+    }
+
+    .sections-articles ul {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .primary-article {
+      max-height: 276px;
+    }
+
+    .latest-deals-list {
+      margin: -10px;
+    }
+
+    .latest-deals li {
+      flex-basis: 33.33333%;
+      max-width: 33.33333%;
+      padding: 10px;
+    }
+
+    .latest-deals-list .article-image {
+      max-width: 100%;
+      background-position: cover;
+  }
+
+    .latest-deals .discount {
+      top: 10px;
+      right: 10px;
+    }
+    
+    .latest-deals .discount div {
+      top: 20px;
+      right: 34px;
     }
   }
 
@@ -1264,16 +1513,60 @@ nav {
         line-height: 20px;
     }
 
-<<<<<<< HEAD
-    .apps {
+    .sections-articles {
       flex-basis: 33.33333%;
         max-width: 33.33333%;
         padding: 12px;
     }
-=======
+
     .header {
       align-items: center;
     }
 
->>>>>>> d63a3dd1408e8a2d6be82f143bf9fe02288f46ac
+    .latest-deals-list {
+      margin: -12px;
+    }
+
+    .latest-deals li {
+      flex-basis: 25%;
+      max-width: 276px;
+      padding: 12px;
+    }
+
+    .latest-deals .discount {
+      top: 12px;
+      right: 12px;
+    }
+    
+    .latest-deals .discount div {
+      top: 20px;
+      right: 34px;
+    }
+
+    .latest-deals .article-title {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 0;
+    }
+
+    .latest-deals span:first-of-type {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .latest-deals span:last-of-type {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    /* .latest-deals li:nth-of-type(1) .discount,
+    .latest-deals li:nth-of-type(5) .discount {
+      right: 12px;
+    }
+
+    .latest-deals li:nth-of-type(1) .discount div,
+    .latest-deals li:nth-of-type(5) .discount div {
+      left: 8;
+    } */
   }
+
