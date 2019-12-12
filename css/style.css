@@ -613,6 +613,192 @@ nav {
   color: #f42;
 }
 
+/* new */
+
+.sections-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1192px;
+  margin: 0 auto 40px auto;
+}
+
+.apps {
+  flex-basis: 100%;
+  flex: 0 0 auto;
+  max-width: 100%;
+  padding: 8px;
+  margin: 0;
+}
+
+.apps h2 {
+  margin-bottom: 18px;
+}
+
+.apps ul {
+  display: flex;
+  flex-direction: column;
+  max-width: 368px;
+  width: 100%;
+}
+
+.apps ul li:first-child a:first-of-type {
+  text-decoration: none;
+}
+
+.apps .primary-article {
+  max-height: 276px;
+  width: 100%;
+  height: 276px;
+  position: relative;
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Chrome-79-368x276.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% 100%, cover;
+}
+
+.apps .primary-article .description {
+  bottom: 0;
+    left: 0;
+    padding: 14px;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+}
+
+.apps .primary-article .description div {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+  color: hsla(0, 0%, 100%, .6);
+}
+
+.apps .primary-article .article-author {
+  color: inherit;
+  text-decoration: none;
+}
+
+.apps .primary-article .article-author:after {
+  content: "\B7";
+    display: block;
+    float: right;
+    margin: 0 4px;
+}
+
+.apps .primary-article .article-author:hover {
+  color: #fff;
+}
+
+.apps .primary-article h5 {
+  color: #fff;
+    font-size: 13px;
+    font-family: 'Shentox', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    line-height: 1.5;
+  pointer-events: none;
+}
+
+.apps .primary-article h3 {
+  margin-bottom: 6px;
+}
+
+.apps .primary-article h3 a {
+  font-size: 20px;
+  font-weight: 700;
+    line-height: 1.1;
+    color: #fff;
+    text-decoration: none; 
+}
+
+.apps .primary-article h3 a:hover {
+  box-shadow: inset 0 -1px 0 hsla(0,0%,100%,.3);
+}
+
+.apps .latest-article {
+  display: flex;
+    background-color: rgba(255, 68, 34, .06);
+    margin: 2px 0;
+}
+
+.apps .latest-article div {
+  flex: 1;
+    overflow: hidden;
+    padding: 10px 14px 0;
+    background-color: transparent;
+}
+
+.apps .latest-article h4 {
+  color: #f42;
+    font-size: 13px;
+    font-family: 'Shentox',sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    line-height: 1.5;
+}
+
+.apps .latest-article h5 a {
+  width: 100%;
+  max-height: 56px;
+  font-family: 'ARS-Marquette-Bold', "Helvetica Neue", Arial, sans-serif;  
+  overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #f42;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration: none;
+}
+
+.apps .latest-article h5 a:hover {
+  box-shadow: inset 0 -1px 0 rgba(255,68,34,.2);
+}
+
+.apps .latest-article .image-link{
+  display: inline-block;
+  width: 96px;
+  height: 96px;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/China-app.jpg);
+  background-position: 50%;
+    background-size: cover;
+}
+
+.apps .bullet-links {
+  border-bottom: 1px solid #eee;
+}
+
+.apps .bullet-links a {
+  display: block;
+    padding: 6px 0 6px 14px;
+    position: relative;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.apps .bullet-links a:before {
+  border-radius: 50%;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 13px;
+    width: 4px;
+    background-color: #f42;
+}
+
+.apps .bullet-links a:hover {
+  color: #000;
+}
+
+/* new */
+
 @media screen and (max-width: 1600px) {
 
   .articles-cover {
@@ -797,6 +983,13 @@ nav {
     .footer-legal {
       padding: 39px 0;
     }
+
+    .apps {
+      flex-basis: 50%;
+        max-width: 50%;
+        padding: 10px;
+        margin-bottom: 24px;
+    }
   }
 
   @media screen and (min-width: 1024px) {
@@ -823,5 +1016,11 @@ nav {
     .latest-news-list div {
       font-size: 13px;
         line-height: 20px;
+    }
+
+    .apps {
+      flex-basis: 33.33333%;
+        max-width: 33.33333%;
+        padding: 12px;
     }
   }
