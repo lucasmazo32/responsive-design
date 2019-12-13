@@ -285,6 +285,10 @@ nav {
   max-width: 50%;
 }
 
+.logo-main-article:hover {
+  cursor: pointer;
+}
+
 .cover-gradient {
   position: absolute;
   top: 4px;
@@ -296,6 +300,11 @@ nav {
   background-size: cover;
   mix-blend-mode: lighten;
   z-index: 1;
+}
+
+.cover-gradient:hover {
+  cursor: pointer;
+  opacity: .95;
 }
 
 .cover-time {
@@ -359,6 +368,10 @@ nav {
   color: hsla(0, 0%, 100%, 0.6);
   font-size: 13px;
   line-height: 16px;
+}
+
+.link-main-articles:hover {
+  color: white;
 }
 
 .icons {
@@ -591,6 +604,14 @@ nav {
   line-height: 18px;
 }
 
+.link-bar:hover {
+  color: black;
+}
+
+.link-bar:hover::after {
+  color: #f42;
+}
+
 .link-bar:last-of-type {
   margin-right: 0;
 }
@@ -685,6 +706,15 @@ nav {
 .investment-card a {
   color: #555;
   margin-right: 1em;
+}
+
+.latest-founding-articles .investment-card-link {
+  display: flex;
+  align-items: center;
+}
+
+.investment-card-link span {
+  margin-left: 10px;
 }
 
 .investment-card-link:hover {
