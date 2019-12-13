@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive design</title>
+    <title>Responsive Design</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="nav-logo">
+    <nav>
+        <div class="nav-logo">
+            <a href="javascript:void(0);">
+                <img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
+            </a>
+        </div>
+        <ul class="nav-1">
+            <li><a href="javascript:void(0);">News</a></li>
+            <li>
+                <a href="javascript:void(0);">Events ▾</a>
+                <ul class="drop-down-menu">
+                    <li><a href="javascript:void(0);">Bowlr 2019</a></li>
+                    <li><a href="javascript:void(0);">TNW2020</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);">Business ▾</a>
+                <ul class="drop-down-menu">
+                    <li><a href="javascript:void(0);">Index</a></li>
+                    <li><a href="javascript:void(0);">TNW X</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0);">AMAs</a></li>
+            <li><a href="javascript:void(0);">Spaces</a></li>
+            <li><a href="javascript:void(0);">Terms & Conditions</a></li>
+            <li class="stretcher"></li>
+            <li class="disappear"><a href="javascript:void(0);">About</a></li>
+            <li class="disappear"><a href="javascript:void(0);">Team</a></li>
+            <li class="disappear"><a href="javascript:void(0);">Advertise</a></li>
+            <li class="disappear"><a href="javascript:void(0);">Jobs</a></li>
+            <li class="disappear"><a href="javascript:void(0);">Contact</a></li>
+        </ul>
+        <ul class="navigation">
+            <li><a href="javascript:void(0);">LATEST</a></li>
+            <li><a href="javascript:void(0);">HARD WORK</a></li>
+            <li><a href="javascript:void(0);">PLUGGED</a></li>
+            <li><a href="javascript:void(0);">FUNDEMENTALS</a></li>
+            <li><a href="javascript:void(0);">WORK 2030</a></li>
+            <li class="stretcher"><a href="javascript:void(0);"></a></li>
+            <li class="magnyfing-glass">
                 <a href="javascript:void(0);">
-                    <img alt="The Next Web"
-                        src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
+                    <i class="magnyfing-glass-icon"></i>
                 </a>
-            </div>
-            <ul class="nav-1">
-                <li><a href="javascript:void(0);">News</a></li>
-                <li><a href="javascript:void(0);">Events ▾</a></li>
-                <li><a href="javascript:void(0);">Business ▾</a></li>
-                <li><a href="javascript:void(0);">AMAs</a></li>
-                <li><a href="javascript:void(0);">Spaces</a></li>
-                <li><a href="javascript:void(0);">Terms & Conditions</a></li>
-                <li class="stretcher"></li>
-                <li class="disappear"><a href="javascript:void(0);">About</a></li>
-                <li class="disappear"><a href="javascript:void(0);">Team</a></li>
-                <li class="disappear"><a href="javascript:void(0);">Advertise</a></li>
-                <li class="disappear"><a href="javascript:void(0);">Jobs</a></li>
-                <li class="disappear"><a href="javascript:void(0);">Contact</a></li>
-            </ul>
-            <ul class="navigation">
-                <li><a href="javascript:void(0);">LATEST</a></li>
-                <li><a href="javascript:void(0);">HARD WORK</a></li>
-                <li><a href="javascript:void(0);">PLUGGED</a></li>
-                <li><a href="javascript:void(0);">FUNDEMENTALS</a></li>
-                <li><a href="javascript:void(0);">WORK 2030</a></li>
-                <li class="stretcher"><a href="javascript:void(0);"></a></li>
-                <li class="magnyfing-glass">
-                    <a href="javascript:void(0);">
-                        <i class="magnyfing-glass-icon"></i>
-                    </a>
-                </li>
-                <li class="hamburger-icon">
-                    <a href="javascript:void(0);">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="articles-cover">
+            </li>
+            <li class="hamburger-icon">
+                <a href="javascript:void(0);">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-page">
+        <div class="articles-cover">
             <article class="main-article">
                 <a class="background" href="javascript:void(0);"></a>
                 <div class="cover-gradient cover-show"></div>
@@ -102,7 +109,7 @@
                     </div>
                 </article>
             </div>
-        </section>
+        </div>
         <section class="latest-news main-headlines">
             <h2>
                 <a href="javascript:void(0);">
@@ -338,19 +345,18 @@
                 </h2>
                 <ul>
                     <li>
-                        <a href="javascript:void(0);">
-                            <article class="primary-article">
-                                <div class="description">
-                                    <h5>most popular</h5>
-                                    <h3><a href="javascript:void(0);">Chrome now alerts you when someone steals your
-                                            password</a></h3>
-                                    <div>
-                                        <a class="article-author" href="javascript:void(0);">Ivan Mehta</a>
-                                        <span>21 hours ago</span>
-                                    </div>
+                        <article class="primary-article">
+                            <a href="javascript:void(0);"></a>
+                            <div class="description">
+                                <h5>most popular</h5>
+                                <h3><a href="javascript:void(0);">Chrome now alerts you when someone steals your
+                                        password</a></h3>
+                                <div>
+                                    <a class="article-author" href="javascript:void(0);">Ivan Mehta</a>
+                                    <span>21 hours ago</span>
                                 </div>
-                            </article>
-                        </a>
+                            </div>
+                        </article>
                     </li>
                     <li>
                         <article class="latest-article">
@@ -395,19 +401,18 @@
                 </h2>
                 <ul>
                     <li>
-                        <a href="javascript:void(0);">
-                            <article class="primary-article">
-                                <div class="description">
-                                    <h5>most popular</h5>
-                                    <h3><a href="javascript:void(0);">Putting wheels on your new Mac Pro will cost you
-                                            $400</a></h3>
-                                    <div>
-                                        <a class="article-author" href="javascript:void(0);">Napier Lopez</a>
-                                        <span>18 hours ago</span>
-                                    </div>
+                        <article class="primary-article">
+                            <a href="javascript:void(0);"></a>
+                            <div class="description">
+                                <h5>most popular</h5>
+                                <h3><a href="javascript:void(0);">Putting wheels on your new Mac Pro will cost you
+                                        $400</a></h3>
+                                <div>
+                                    <a class="article-author" href="javascript:void(0);">Napier Lopez</a>
+                                    <span>18 hours ago</span>
                                 </div>
-                            </article>
-                        </a>
+                            </div>
+                        </article>
                     </li>
                     <li>
                         <article class="latest-article">
@@ -453,19 +458,18 @@
                 </h2>
                 <ul>
                     <li>
-                        <a href="javascript:void(0);">
-                            <article class="primary-article">
-                                <div class="description">
-                                    <h5>most popular</h5>
-                                    <h3><a href="javascript:void(0);">Report: Palantir took over Project Maven, the
-                                            military AI program too unethical for Google</a></h3>
-                                    <div>
-                                        <a class="article-author" href="javascript:void(0);">Tristan Greene</a>
-                                        <span>21 hours ago</span>
-                                    </div>
+                        <article class="primary-article">
+                            <a href="javascript:void(0);"></a>
+                            <div class="description">
+                                <h5>most popular</h5>
+                                <h3><a href="javascript:void(0);">Report: Palantir took over Project Maven, the
+                                        military AI program too unethical for Google</a></h3>
+                                <div>
+                                    <a class="article-author" href="javascript:void(0);">Tristan Greene</a>
+                                    <span>21 hours ago</span>
                                 </div>
-                            </article>
-                        </a>
+                            </div>
+                        </article>
                     </li>
                     <li>
                         <article class="latest-article">
@@ -511,19 +515,18 @@
                 </h2>
                 <ul>
                     <li>
-                        <a href="javascript:void(0);">
-                            <article class="primary-article">
-                                <div class="description">
-                                    <h5>most popular</h5>
-                                    <h3><a href="javascript:void(0);">Giphy debuts Arcade, a platform for making and
-                                            playing 'microgames'</a></h3>
-                                    <div>
-                                        <a class="article-author" href="javascript:void(0);">Rachel Kaser</a>
-                                        <span>8 weeks ago</span>
-                                    </div>
+                        <article class="primary-article">
+                            <a href="javascript:void(0);"></a>
+                            <div class="description">
+                                <h5>most popular</h5>
+                                <h3><a href="javascript:void(0);">Giphy debuts Arcade, a platform for making and
+                                        playing 'microgames'</a></h3>
+                                <div>
+                                    <a class="article-author" href="javascript:void(0);">Rachel Kaser</a>
+                                    <span>8 weeks ago</span>
                                 </div>
-                            </article>
-                        </a>
+                            </div>
+                        </article>
                     </li>
                     <li>
                         <article class="latest-article">
@@ -570,19 +573,18 @@
                 </h2>
                 <ul>
                     <li>
-                        <a href="javascript:void(0);">
-                            <article class="primary-article">
-                                <div class="description">
-                                    <h5>most popular</h5>
-                                    <h3><a href="javascript:void(0);">Five things AI firms can learn from video games
-                                            success</a></h3>
-                                    <div>
-                                        <a class="article-author" href="javascript:void(0);">Ellie Martin</a>
-                                        <span>9 days ago</span>
-                                    </div>
+                        <article class="primary-article">
+                            <a href="javascript:void(0);"></a>
+                            <div class="description">
+                                <h5>most popular</h5>
+                                <h3><a href="javascript:void(0);">Five things AI firms can learn from video games
+                                        success</a></h3>
+                                <div>
+                                    <a class="article-author" href="javascript:void(0);">Ellie Martin</a>
+                                    <span>9 days ago</span>
                                 </div>
-                            </article>
-                        </a>
+                            </div>
+                        </article>
                     </li>
                     <li>
                         <article class="latest-article">
@@ -627,19 +629,18 @@
                 </h2>
                 <ul>
                     <li>
-                        <a href="javascript:void(0);">
-                            <article class="primary-article">
-                                <div class="description">
-                                    <h5>most popular</h5>
-                                    <h3><a href="javascript:void(0);">Amazon Ring owners foil $400K Bitcoin extortion
-                                            plot by removing batteries</a></h3>
-                                    <div>
-                                        <a class="article-author" href="javascript:void(0);">Matthew Beedham</a>
-                                        <span>7 hours ago</span>
-                                    </div>
+                        <article class="primary-article">
+                            <a href="javascript:void(0);"></a>
+                            <div class="description">
+                                <h5>most popular</h5>
+                                <h3><a href="javascript:void(0);">Amazon Ring owners foil $400K Bitcoin extortion
+                                        plot by removing batteries</a></h3>
+                                <div>
+                                    <a class="article-author" href="javascript:void(0);">Matthew Beedham</a>
+                                    <span>7 hours ago</span>
                                 </div>
-                            </article>
-                        </a>
+                            </div>
+                        </article>
                     </li>
                     <li>
                         <article class="latest-article">
@@ -687,19 +688,18 @@
                 </h2>
                 <ul>
                     <li>
-                        <a href="javascript:void(0);">
-                            <article class="primary-article">
-                                <div class="description">
-                                    <h5>most popular</h5>
-                                    <h3><a href="javascript:void(0);">PSA: Amazon Fresh grocery deliveries are now free
-                                            for US Prime members</a></h3>
-                                    <div>
-                                        <a class="article-author" href="javascript:void(0);">Abhimanyu Ghoshal</a>
-                                        <span>6 weeks ago</span>
-                                    </div>
+                        <article class="primary-article">
+                            <a href="javascript:void(0);"></a>
+                            <div class="description">
+                                <h5>most popular</h5>
+                                <h3><a href="javascript:void(0);">PSA: Amazon Fresh grocery deliveries are now free
+                                        for US Prime members</a></h3>
+                                <div>
+                                    <a class="article-author" href="javascript:void(0);">Abhimanyu Ghoshal</a>
+                                    <span>6 weeks ago</span>
                                 </div>
-                            </article>
-                        </a>
+                            </div>
+                        </article>
                     </li>
                     <li>
                         <article class="latest-article">
@@ -746,19 +746,18 @@
                 </h2>
                 <ul>
                     <li>
-                        <a href="javascript:void(0);">
-                            <article class="primary-article">
-                                <div class="description">
-                                    <h5>most popular</h5>
-                                    <h3><a href="javascript:void(0);">This gold-and-diamond-encrusted Jesus phone is the
-                                            absolute most</a></h3>
-                                    <div>
-                                        <a class="article-author" href="javascript:void(0);">Rachel Kaser</a>
-                                        <span>20 hours ago</span>
-                                    </div>
+                        <article class="primary-article">
+                            <a href="javascript:void(0);"></a>
+                            <div class="description">
+                                <h5>most popular</h5>
+                                <h3><a href="javascript:void(0);">This gold-and-diamond-encrusted Jesus phone is the
+                                        absolute most</a></h3>
+                                <div>
+                                    <a class="article-author" href="javascript:void(0);">Rachel Kaser</a>
+                                    <span>20 hours ago</span>
                                 </div>
-                            </article>
-                        </a>
+                            </div>
+                        </article>
                     </li>
                     <li>
                         <article class="latest-article">
@@ -811,7 +810,8 @@
                         <div>98% off</div>
                     </div>
                     <h4>
-                        <a class="article-title" href="javascript:void(0);">The Ultimate SQL Bootcamp Certification Bundle</a>
+                        <a class="article-title" href="javascript:void(0);">The Ultimate SQL Bootcamp Certification
+                            Bundle</a>
                     </h4>
                     <div class="price">
                         <span>$1200</span>
@@ -824,7 +824,8 @@
                         <div>95% off</div>
                     </div>
                     <h4>
-                        <a class="article-title" href="javascript:void(0);">The 2020 Limited Edition Mac Bundle Ft. Parallels Desktop</a>
+                        <a class="article-title" href="javascript:void(0);">The 2020 Limited Edition Mac Bundle Ft.
+                            Parallels Desktop</a>
                     </h4>
                     <div class="price">
                         <span>$1267.80</span>
@@ -850,7 +851,8 @@
                         <div>92% off</div>
                     </div>
                     <h4>
-                        <a class="article-title" href="javascript:void(0);">12min Micro Book Library: Lifetime Premium Subscription</a>
+                        <a class="article-title" href="javascript:void(0);">12min Micro Book Library: Lifetime Premium
+                            Subscription</a>
                     </h4>
                     <div class="price">
                         <span>$346.50</span>
@@ -863,7 +865,8 @@
                         <div>98% off</div>
                     </div>
                     <h4>
-                        <a class="article-title" href="javascript:void(0);">The Ultimate 2020 Web Designer & Developer Bundle</a>
+                        <a class="article-title" href="javascript:void(0);">The Ultimate 2020 Web Designer & Developer
+                            Bundle</a>
                     </h4>
                     <div class="price">
                         <span>$1299</span>
@@ -876,7 +879,8 @@
                         <div>98% off</div>
                     </div>
                     <h4>
-                        <a class="article-title" href="javascript:void(0);">The Learn Game Design Certification Bundle</a>
+                        <a class="article-title" href="javascript:void(0);">The Learn Game Design Certification
+                            Bundle</a>
                     </h4>
                     <div class="price">
                         <span>$1097</span>
@@ -889,7 +893,8 @@
                         <div>92% off</div>
                     </div>
                     <h4>
-                        <a class="article-title" href="javascript:void(0);">AnyPicker Visual Web Scraper: Lifetime Subscription</a>
+                        <a class="article-title" href="javascript:void(0);">AnyPicker Visual Web Scraper: Lifetime
+                            Subscription</a>
                     </h4>
                     <div class="price">
                         <span>$499.99</span>
@@ -902,7 +907,8 @@
                         <div>98% off</div>
                     </div>
                     <h4>
-                        <a class="article-title" href="javascript:void(0);">The Premium 2020 Project & Quality Management Certification Bundle</a>
+                        <a class="article-title" href="javascript:void(0);">The Premium 2020 Project & Quality
+                            Management Certification Bundle</a>
                     </h4>
                     <div>
                         <span>$2699</span>
@@ -954,5 +960,4 @@
         </div>
     </footer>
 </body>
-
 </html>
