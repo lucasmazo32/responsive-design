@@ -25,4 +25,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Thanks for The Nex Web for having such a fun layout and responsive design to replicate.
+* Thanks for The Next Web for having such a fun layout and responsive design to replicate.
