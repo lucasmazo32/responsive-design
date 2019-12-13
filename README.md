@@ -4,7 +4,7 @@ This is a layout clone of the webpage https://thenextweb.com/
 
 ## Screenshot
 
-![Screenshot of the webpage](https://github.com/Jaakal/design-teardown/blob/design/screenshot.png)
+![Screenshot of the webpage](https://github.com/lucasmazo32/responsive-design/blob/design/Screenshot.png)
 
 ## Getting Started
 
