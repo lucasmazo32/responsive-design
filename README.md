@@ -4,7 +4,7 @@ This is a layout clone of the webpage https://thenextweb.com/
 
 ## Screenshot
 
-![Screenshot of the webpage](https://github.com/Jaakal/design-teardown/blob/design/screenshot.png)
+![Screenshot of the webpage](https://github.com/lucasmazo32/responsive-design/blob/design/Screenshot.png)
 
 ## Getting Started
 
@@ -25,4 +25,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Thanks for The Nex Web for having such a fun layout and responsive design to replicate.
+* Thanks for The Next Web for having such a fun layout and responsive design to replicate.
